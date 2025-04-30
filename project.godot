@@ -1,0 +1,24 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Runebound - dccg"
+config/description="A strategic 1v1 Digital collectible card game  4 prototype built in Godot Engine 4.4. Players invoke creatures, cast powerful Runebindings, and utilize instant spells in a turn-based battle to reduce their opponent's life points to zero. This project features a unique mana system where players must intentionally discard cards to gain maximum mana."
+run/main_scene="uid://b1r31vxxndjso"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="uid://ca5ysqu8wrl8g"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+mouse_cursor/custom_image="uid://dvwe3m17am5m1"

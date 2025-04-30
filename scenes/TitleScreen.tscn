@@ -1,0 +1,281 @@
+[gd_scene load_steps=15 format=3 uid="uid://6a531dp5eln3"]
+
+[ext_resource type="Script" uid="uid://bgagoy84d8akw" path="res://scripts/ui/title_screen.gd" id="1_ch40n"]
+[ext_resource type="Texture2D" uid="uid://bjolc5mlipxxc" path="res://assets/images/title_bg/bg1.png" id="2_85feu"]
+[ext_resource type="Texture2D" uid="uid://qneveqlp5fsp" path="res://assets/ui/runebound_logo.png" id="2_dfj8j"]
+[ext_resource type="Texture2D" uid="uid://fab8t7app6l8" path="res://assets/images/title_bg/bg2.png" id="3_66w26"]
+[ext_resource type="Texture2D" uid="uid://bh1emsmnc20ni" path="res://assets/images/title_bg/bg3.png" id="4_3ej01"]
+[ext_resource type="Texture2D" uid="uid://bg3b4srjdr66v" path="res://assets/images/title_bg/bg4.png" id="5_w20ru"]
+[ext_resource type="StyleBox" uid="uid://bk6y6pr1susx7" path="res://themes/menu_buttons.tres" id="7_3ej01"]
+[ext_resource type="Texture2D" uid="uid://crj81je7xjmw3" path="res://assets/ui/options.png" id="7_66w26"]
+
+[sub_resource type="Theme" id="Theme_w20ru"]
+
+[sub_resource type="Animation" id="Animation_85feu"]
+resource_name = "KenA"
+length = 10.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BgLayerA:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.15, 1.15)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BgLayerA:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-60, -40)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BgLayerA:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_66w26"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BgLayerA:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BgLayerA:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BgLayerA:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BgLayerB:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BgLayerB:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BgLayerB:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_3ej01"]
+resource_name = "KenB"
+length = 10.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BgLayerB:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.15, 1.15)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BgLayerB:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-216.52, -36.84)]
+}
+
+[sub_resource type="Animation" id="Animation_w20ru"]
+resource_name = "CrossFade"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BgLayerA:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BgLayerB:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w20ru"]
+_data = {
+&"CrossFade": SubResource("Animation_w20ru"),
+&"KenA": SubResource("Animation_85feu"),
+&"KenB": SubResource("Animation_3ej01"),
+&"RESET": SubResource("Animation_66w26")
+}
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ch40n")
+backgrounds = Array[Texture]([ExtResource("2_85feu"), ExtResource("3_66w26"), ExtResource("4_3ej01"), ExtResource("5_w20ru")])
+
+[node name="BgLayerA" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 3
+
+[node name="BgLayerB" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 3
+
+[node name="Overlay" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Logo" type="TextureRect" parent="Overlay"]
+layout_mode = 1
+offset_left = 123.0
+offset_top = 108.0
+offset_right = 608.0
+offset_bottom = 593.0
+texture = ExtResource("2_dfj8j")
+expand_mode = 1
+
+[node name="BtnPanel" type="HBoxContainer" parent="Overlay"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -89.705
+offset_top = -91.84
+offset_right = -49.705
+offset_bottom = -51.8401
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="LoginBtn" type="Button" parent="Overlay/BtnPanel"]
+layout_mode = 2
+theme = SubResource("Theme_w20ru")
+theme_override_constants/h_separation = 20
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("7_3ej01")
+text = "Login"
+
+[node name="CreateBtn" type="Button" parent="Overlay/BtnPanel"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+text = "Criar Conta"
+
+[node name="OptionsBtn" type="TextureButton" parent="Overlay/BtnPanel"]
+layout_mode = 2
+texture_normal = ExtResource("7_66w26")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_w20ru")
+}
+
+[node name="KenTimer" type="Timer" parent="."]

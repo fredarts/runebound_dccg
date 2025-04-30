@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://bk6y6pr1susx7"]
+
+[resource]
+content_margin_left = 20.0
+content_margin_right = 20.0
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 3
+shadow_offset = Vector2(3, 3)

@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1r31vxxndjso"]
+
+[ext_resource type="Script" uid="uid://dk4hlfm4q6bgo" path="res://scripts/ui/splash_screen.gd" id="1_m0ilf"]
+[ext_resource type="Texture2D" uid="uid://c02krb6my8rho" path="res://assets/splashscreen/SplashScreen.png" id="2_eina6"]
+
+[sub_resource type="Animation" id="Animation_usb1j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_wh6tg"]
+resource_name = "fade"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6, 2.37, 3),
+"transitions": PackedFloat32Array(1, 2.14355, 2.63902, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lhnum"]
+_data = {
+&"RESET": SubResource("Animation_usb1j"),
+&"fade": SubResource("Animation_wh6tg")
+}
+
+[node name="SplashScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m0ilf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_eina6")
+stretch_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lhnum")
+}

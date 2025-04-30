@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Card" load_steps=2 format=3 uid="uid://dj5f821oeuywp"]
+
+[ext_resource type="Script" uid="uid://dt8rin2syqke6" path="res://scripts/core/Card.gd" id="1_7yxsn"]
+
+[resource]
+script = ExtResource("1_7yxsn")
+id = "CR001"
+name = "Elven Ranger"
+card_set = "ELDRAEM"
+cost = 2
+type = "Creature"
+description = "Quick and agile, ideal for early pressure."
+image_path = "res://assets/cards/elven_ranger.png"
+rarity = "common"
+attack = 2
+toughness = 2
+effects = Array[String]([])
+metadata/_custom_type_script = "uid://dt8rin2syqke6"
