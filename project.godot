@@ -14,7 +14,12 @@ config/name="Runebound - dccg"
 config/description="A strategic 1v1 Digital collectible card game  4 prototype built in Godot Engine 4.4. Players invoke creatures, cast powerful Runebindings, and utilize instant spells in a turn-based battle to reduce their opponent's life points to zero. This project features a unique mana system where players must intentionally discard cards to gain maximum mana."
 run/main_scene="uid://b1r31vxxndjso"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/show_image=false
 config/icon="uid://ca5ysqu8wrl8g"
+
+[autoload]
+
+Account_Manager="*res://scripts/managers/AccountManager.gd"
 
 [display]
 

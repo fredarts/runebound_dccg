@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6cy1w5pbvsiu"]
+
+[ext_resource type="Script" uid="uid://bi6dypy442p1a" path="res://scripts/ui/login_screen.gd" id="1_qucne"]
+[ext_resource type="Texture2D" uid="uid://bs3rclojxb8wa" path="res://assets/images/screens_background/login_background.png" id="2_mkq73"]
+
+[node name="LoginScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qucne")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_mkq73")
+
+[node name="VBox" type="Panel" parent="."]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBox"]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 380.0
+offset_bottom = 380.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBox/VBoxContainer"]
+layout_mode = 2
+text = "Login"
+horizontal_alignment = 1
+
+[node name="UserEdit" type="LineEdit" parent="VBox/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Usuário"
+
+[node name="PassEdit" type="LineEdit" parent="VBox/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Senha"
+
+[node name="MsgLabel" type="Label" parent="VBox/VBoxContainer"]
+layout_mode = 2
+
+[node name="LoginBtn" type="Button" parent="VBox/VBoxContainer"]
+layout_mode = 2
+text = "Login"
+
+[node name="BackBtn" type="Button" parent="VBox/VBoxContainer"]
+layout_mode = 2
+text = "Voltar"
