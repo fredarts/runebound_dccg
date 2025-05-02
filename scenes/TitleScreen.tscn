@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://6a531dp5eln3"]
+[gd_scene load_steps=18 format=3 uid="uid://6a531dp5eln3"]
 
 [ext_resource type="Script" uid="uid://bgagoy84d8akw" path="res://scripts/ui/title_screen.gd" id="1_ch40n"]
 [ext_resource type="Texture2D" uid="uid://bstxlj4cu4m2k" path="res://assets/images/title_bg/bg1.png" id="2_85feu"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://baal8ch54lnoe" path="res://assets/images/title_bg/bg2.png" id="3_66w26"]
 [ext_resource type="Texture2D" uid="uid://cjb06pb5hl4u7" path="res://assets/images/title_bg/bg3.png" id="4_3ej01"]
 [ext_resource type="Texture2D" uid="uid://bp62y0v4xr8md" path="res://assets/images/title_bg/bg4.png" id="5_w20ru"]
+[ext_resource type="FontFile" uid="uid://c2p5onv7seqvn" path="res://assets/fonts/Metamorphous-Regular.ttf" id="7_1vfo2"]
 [ext_resource type="StyleBox" uid="uid://bk6y6pr1susx7" path="res://themes/menu_buttons.tres" id="7_3ej01"]
 [ext_resource type="Texture2D" uid="uid://crj81je7xjmw3" path="res://assets/ui/options.png" id="7_66w26"]
 [ext_resource type="StyleBox" uid="uid://cbw0d42ij07n" path="res://themes/menu_buttons_hover.tres" id="7_w20ru"]
@@ -247,8 +248,10 @@ theme_override_constants/separation = 20
 [node name="LoginBtn" type="Button" parent="Overlay/BtnPanel"]
 layout_mode = 2
 theme = SubResource("Theme_w20ru")
+theme_override_constants/outline_size = 4
 theme_override_constants/h_separation = 20
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("7_1vfo2")
+theme_override_font_sizes/font_size = 28
 theme_override_styles/hover = ExtResource("7_w20ru")
 theme_override_styles/normal = ExtResource("7_3ej01")
 text = "Login"
@@ -257,7 +260,8 @@ text = "Login"
 layout_mode = 2
 theme = SubResource("Theme_3ej01")
 theme_override_constants/h_separation = 20
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("7_1vfo2")
+theme_override_font_sizes/font_size = 28
 theme_override_styles/hover = ExtResource("7_w20ru")
 theme_override_styles/normal = ExtResource("7_3ej01")
 text = "Criar Conta"
